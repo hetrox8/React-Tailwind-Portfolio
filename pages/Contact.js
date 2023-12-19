@@ -5,7 +5,7 @@ const Contact = () => {
     <section id="contact" className="contact bg-slate-50 py-3 text-center rounded-md">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-lg font-medium pt-8 pb-2">Contact Me</h2>
-        <p>If you have any inquiries or if you'd like to work together, feel free to reach out!</p>
+        <p>If you have any inquiries or if you would like to work together, feel free to reach out!</p>
         {/* Add your contact form here */}
         <form className="f-1" action="https://formspree.io/f/mvonypvv" method="post">
           <div className="mb-4">
