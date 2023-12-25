@@ -29,3 +29,18 @@ section#contact {
   color: #ffff;
   font-size: 22px;
 }
+
+.underline {
+  text-decoration: none;
+  font-size: 17px;
+}
+
+p.project-p {
+  font: 500;
+  font-size: 18px;
+}
+
+button {
+  background-color: #24d6cd;
+  border-radius: 20px 20px;
+}

@@ -13,14 +13,12 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import spaceTravel  from "../public/space-travel.png";
+import awesomeBooks from '../public/awesomeBooks.png';
+import maths from '../public/maths.png';
 
 import Contact from './Contact';
+import { space } from "postcss/lib/list";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -66,8 +64,8 @@ export default function Home() {
               needs. Join me down below and let's get cracking!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
+             <a href="https://twitter.com/SuleimanGacheru" target="_blank"> <AiFillTwitterCircle /></a>
+              <a href="https://www.linkedin.com/in/suleiman-yusuf-gacheru/" target="_blank"><AiFillLinkedin /></a>
               <AiFillYoutube />
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
@@ -152,62 +150,122 @@ export default function Home() {
               programming and teaching.
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web1}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-              />
-            </div>
-          </div>
+          <div className="flex flex-wrap gap-6 justify-center">
+    {/* Card 1 */}
+{/* Card 1 */}
+<div className="flex-1 max-w-sm flex">
+  <div className="rounded-lg overflow-hidden shadow-lg dark:bg-white flex-1">
+    <Image
+      className="w-full h-48 object-cover"
+      src={spaceTravel}
+      alt="Project 1"
+      layout="responsive"
+    />
+    <div className="p-4 flex flex-col">
+      <h4 className="text-xl font-medium mb-2">Space Travellers Hub</h4>
+      <p className="project-p text-gray-800 dark:text-gray-200 flex-1">
+      Space Travellers Hub is a React App where Users can check available Space Shuttles,
+       Book or Cancel Booking. There are Various Space
+       Shuttles for Booking Including the Very Best Eagle Falcon from Space X.
+      </p>
+      <p>
+        Main languages used include
+        <li>
+          <ul>React</ul>
+          <ul>Redux</ul>
+          <ul>Css</ul>
+        </li>
+      </p>
+      {/* Add live demo link */}
+      <button className="bg-teal-500 text-white py-2 px-4 rounded-full h-10 transition duration-300 ease-in-out hover:bg-teal-600">
+        <a
+          href="https://6586dec1b2a7d78b0b4e8b3e--willowy-gaufre-5ca032.netlify.app/"
+          target="_blank"
+          className="text-white underline"
+        >
+          Live Demo
+        </a>
+      </button>
+    </div>
+  </div>
+</div>
+
+{/* Card 2 */}
+<div className="flex-1 max-w-sm flex">
+  <div className="rounded-lg overflow-hidden shadow-lg dark:bg-white flex-1">
+    <Image
+      className="w-full h-48 object-cover"
+      src={awesomeBooks}
+      alt="Project 1"
+      layout="responsive"
+    />
+    <div className="p-4 flex flex-col">
+      <h4 className="text-xl font-medium mb-2">Math Magicians</h4>
+      <p className="project-p text-gray-800 dark:text-gray-200 flex-1">
+        Math Magicians is a Javascript Built Web App where Users can Perform Mathematical Calculations, At the Same time having Random Quotes being Displayed to cheer up the Client in times of difficulty.
+        <br />
+        The main languages used are:
+        <br />
+        1. Vanilla Javascript
+        <br />
+        2. CSS
+        <br />
+        3. HTML
+      </p>
+      {/* Add live demo link */}
+      <button className="bg-teal-500 text-white py-2 px-4 rounded-full h-10 transition duration-300 ease-in-out hover:bg-teal-600">
+        <a
+          href="https://6586dec1b2a7d78b0b4e8b3e--willowy-gaufre-5ca032.netlify.app/"
+          target="_blank"
+          className="text-white underline"
+        >
+          Live Demo
+        </a>
+      </button>
+    </div>
+  </div>
+</div>
+
+{/* Card 3 */}
+<div className="flex-1 max-w-sm flex">
+  <div className="rounded-lg overflow-hidden shadow-lg dark:bg-white flex-1">
+    <Image
+      className="w-full h-48 object-cover"
+      src={maths}
+      alt="Project 1"
+      layout="responsive"
+    />
+    <div className="p-4 flex flex-col">
+      <h4 className="text-xl font-medium mb-2">Awesome Books</h4>
+      <p className="project-p text-gray-800 dark:text-gray-200 flex-1">
+        Awesome books is a friendly educational website where users can preview the books, add them and delete in the future once done with them.
+        <br />
+        The main languages used to achieve this include:
+        <br />
+        1. Javascript
+        <br />
+        2. HTML
+        <br />
+        3. CSS
+        <br />
+        4. Webpack
+      </p>
+      {/* Add live demo link */}
+      <button className="bg-teal-500 text-white py-2 px-4 rounded-full h-10 transition duration-300 ease-in-out hover:bg-teal-600">
+        <a
+          href="https://6586dec1b2a7d78b0b4e8b3e--willowy-gaufre-5ca032.netlify.app/"
+          target="_blank"
+          className="text-white underline"
+        >
+          Live Demo
+        </a>
+      </button>
+    </div>
+  </div>
+</div>
+{ /* end of portfolio*/}
+
+  </div>
         </section>
         <section>
           <Contact />
