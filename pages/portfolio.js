@@ -72,6 +72,9 @@ const  Portfolio = ()  => {
       </div>
     </div>
   </section>
+
+{/* portfolio section */}
+
   <section className="py-10">
     <div>
       <h3 className="headings text-3xl py-1 dark:text-white ">Portofolio</h3>
@@ -93,12 +96,14 @@ const  Portfolio = ()  => {
 {/* Card 1 */}
 <div className="flex-1 max-w-sm flex">
 <div className="rounded-lg overflow-hidden shadow-lg dark:bg-white flex-1">
+  <div className='image-card'>
 <Image
 className="w-full h-48 object-cover"
 src={spaceTravel}
 alt="Project 1"
 layout="responsive"
 />
+</div> 
 <div className="p-4 flex flex-col">
 <h4 className="text-xl font-medium mb-2">Space Travellers Hub</h4>
 <p className="project-p text-gray-800 dark:text-gray-200 flex-1">
@@ -123,12 +128,14 @@ Space Travellers Hub is a React App where Users can check available Space Shuttl
 {/* Card 2 */}
 <div className="flex-1 max-w-sm flex">
 <div className="rounded-lg overflow-hidden shadow-lg dark:bg-white flex-1">
+  <div className='image-card'>
 <Image
 className="w-full h-48 object-cover"
 src={awesomeBooks}
 alt="Project 1"
 layout="responsive"
 />
+</div>
 <div className="p-4 flex flex-col">
 <h4 className="text-xl font-medium mb-2">Math Magicians</h4>
 <p className="project-p text-gray-800 dark:text-gray-200 flex-1">
@@ -159,12 +166,15 @@ layout="responsive"
 {/* Card 3 */}
 <div className="flex-1 max-w-sm flex">
 <div className="rounded-lg overflow-hidden shadow-lg dark:bg-white flex-1">
+<div className='image-card'> 
 <Image
 className="w-full h-48 object-cover"
 src={maths}
 alt="Project 1"
 layout="responsive"
+
 />
+</div>
 <div className="p-4 flex flex-col">
 <h4 className="text-xl font-medium mb-2">Awesome Books</h4>
 <p className="project-p text-gray-800 dark:text-gray-200 flex-1">

@@ -53,3 +53,7 @@ button {
 .headings {
   font-weight: 700;
 }
+
+.flex.flex-wrap.gap-6.justify-center {
+  margin: 2rem auto;
+}
