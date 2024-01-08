@@ -44,3 +44,12 @@ button {
   background-color: #24d6cd;
   border-radius: 20px 20px;
 }
+
+.p-para {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.headings {
+  font-weight: 700;
+}
